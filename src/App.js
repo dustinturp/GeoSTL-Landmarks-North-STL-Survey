@@ -13,7 +13,7 @@ import blockData1 from './surveyparcels84.geojson';
 import SdkMap from '@boundlessgeo/sdk/components/map';
 import SdkMapReducer from '@boundlessgeo/sdk/reducers/map';
 
-//test other controls not connected to anything not working 
+//test other controls not connected to anything not working
 import SdkZoomControl from '@boundlessgeo/sdk/components/map/zoom-control';
 import SdkZoomSlider from '@boundlessgeo/sdk/components/map/zoom-slider';
 import SdkMousePosition from '@boundlessgeo/sdk/components/map/mouseposition';
@@ -38,9 +38,9 @@ const store = createStore(combineReducers({
 
 class App extends Component {
   componentDidMount() {
-  
-  
-    
+
+
+
     store.dispatch(SdkMapActions.setView([-90.21, 38.645], 13.9));
      // Restrict the zoom levels
 
@@ -48,7 +48,7 @@ class App extends Component {
     'bnd:minzoom': 10,
     'bnd:maxzoom': 20,
     }));
-    
+
 
 //restrict zoom not working
     store.dispatch(SdkMapActions.updateMetadata({
@@ -66,7 +66,7 @@ class App extends Component {
         'https://c.tile.openstreetmap.org/{z}/{x}/{y}.png',
       ],
     }));
-  
+
     // add an OSM layer
     store.dispatch(SdkMapActions.addLayer({
       id: 'osm',
@@ -93,7 +93,7 @@ class App extends Component {
       type: 'geojson',
       data: blockData1
     }));
-    
+
     store.dispatch(SdkMapActions.addLayer({
       id: 'parcels',
       source: 'parcel',
@@ -104,25 +104,26 @@ class App extends Component {
         'fill-outline-color': '#f03b20',
       },
     }));
-    
 
-    
+
+
   }
-  
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          
+
           <img src={logo2} className="App-logo" alt="logo" />
           <h1 className="App-title">GeoSTL and the Landmarks association Survey Results</h1>
         </header>
         <p className="App-intro">
-        The Survey was done on Saturday, February 3rd in North St Louis. A total of 154 properties were inventoried. Majority of the properties are uninhabitable. 
+        The Survey was done on Saturday, February 3rd in North St Louis. A total of 154 properties were inventoried. Majority of the properties are uninhabitable.
         </p>
-        <SdkMap store={store} 
-          includeFeaturesOnClick 
+        <SdkMap store={store}
+          stopEvent
+          includeFeaturesOnClick
           onClick={(map, xy, featuresPromise) => {
             featuresPromise.then((featureGroups) => {
               console.log(featureGroups)
@@ -142,12 +143,12 @@ class App extends Component {
 
               if (features.length === 0) {
                 // no features, :( Let the user know nothing was there.
-                // map.addPopup(<SdkPopup coordinate={xy} closeable><i>No features found.</i></SdkPopup>);
-                console.log("zero");
+                map.addPopup(<SdkPopup coordinate={xy} closeable><i>No features found.</i></SdkPopup>);
+                //console.log("zero");
               } else {
                 // Show the super advanced fun popup!
-                // map.addPopup(<MarkFeaturesPopup coordinate={xy} features={features} closeable />);
-                console.log("multi");
+                map.addPopup(<SdkPopup coordinate={xy} closeable><i>Features here!</i></SdkPopup>, true, true);
+                //console.log("multi");
               }
             }).catch((exception) => {
               console.error('An error occurred.', exception);
