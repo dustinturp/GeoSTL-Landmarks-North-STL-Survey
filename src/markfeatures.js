@@ -41,6 +41,28 @@ class MarkFeatures extends SdkPopup {
       let features = this.props.features
     for (let i = 0 ; i < this.props.features.length; i ++){
         console.log(features[i].properties['pointsparcels_What address are you at?'])
+        console.log(features[i].properties['pointsparcels_Any Structures Here?'])
+        console.log(features[i].properties['pointsparcels_What is the condition of the Building?'])
+        console.log(features[i].properties['pointsparcels_Building'])
+        console.log(features[i].properties['pointsparcels_Business name (if applicable)'])
+        console.log(features[i].properties['pointsparcels_Does a roof exist?'])
+        console.log(features[i].properties['pointsparcels_Number of exterior walls present'])
+        console.log(features[i].properties['pointsparcels_Number of visible doorways unsecure'])
+        console.log(features[i].properties['pointsparcels_Number of visible window bays unsecure'])
+        console.log(features[i].properties['pointsparcels_Secondary Structure(s)?'])
+        console.log(features[i].properties['pointsparcels_Yard Maintained'])
+        console.log(features[i].properties['pointsparcels_Notes'])
+        console.log(features[i].properties['pointsparcels_Picture of the property'])
+        console.log(features[i].properties['pointsparcels_Additional Picture'])
+        console.log(features[i].properties['pointsparcels_Additional Picture_1'])
+        console.log(features[i].properties['pointsparcels_Additional Picture_2'])
+        console.log(features[i].properties['pointsparcels_Additional Picture_3'])
+        console.log(features[i].properties['pointsparcels_Additional Picture_4'])
+        console.log(features[i].properties['pointsparcels_Ward'])
+        console.log(features[i].properties['pointsparcels_Current Owner'])
+        console.log(features[i].properties['pointsparcels_Year Built'])
+        console.log(features[i].properties['pointsparcels_Building Type_1'])
+        console.log(features[i].properties['pointsparcels_Year Built'])
     }
     //const feature_ids = this.props.features.map(f => f.properties.id);
 
