@@ -19,6 +19,7 @@ import SdkZoomSlider from '@boundlessgeo/sdk/components/map/zoom-slider';
 import SdkMousePosition from '@boundlessgeo/sdk/components/map/mouseposition';
 
 import SdkPopup from '@boundlessgeo/sdk/components/map/popup';
+import MarkFeatures from './markfeatures';
 //i mport popups from './popup.js';
 
 //import SdkLayerList from '@boundlessgeo/sdk/components/layer-list';
@@ -141,14 +142,11 @@ class App extends Component {
                 }
               }
 
-              if (features.length === 0) {
+              if (features.length  > 0) {
                 // no features, :( Let the user know nothing was there.
-                map.addPopup(<SdkPopup coordinate={xy} closeable><i>No features found.</i></SdkPopup>);
-                //console.log("zero");
-              } else {
-                // Show the super advanced fun popup!
-                map.addPopup(<SdkPopup coordinate={xy} closeable><i>Features here!</i></SdkPopup>, true, true);
+                map.addPopup(<MarkFeatures features={features} coordinate={xy} closeable/>, true, true);
                 //console.log("multi");
+              
               }
             }).catch((exception) => {
               console.error('An error occurred.', exception);
