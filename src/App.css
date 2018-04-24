@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * Include the SDK stylesheet
  */
@@ -67,11 +68,15 @@
     overflow: auto; }
 
 .sdk-popup-closer {
+  font-style: normal;
   text-decoration: none;
   position: absolute;
   top: 7px;
   right: 8px;
   cursor: pointer; }
+
+.sdk-popup-closer:after {
+  content: "✖"; }
 
 .controls .sdk-slider-control {
   z-index: 1;
@@ -241,4 +246,5 @@ li.sdk-layer {
 .App-intro {
   font-size: large; }
 
-@keyframes App-logo-spin {}
+@keyframes App-logo-spin {}.sdk-popup-content {
+  min-width: 30rem; }
