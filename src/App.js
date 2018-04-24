@@ -9,7 +9,10 @@ import { createStore,combineReducers, applyMiddleware} from 'redux';
 //import {DragSource, DropTarget} from 'react-dnd';
 //import {types, layerListItemSource, layerListItemTarget, collect, collectDrop} from '@boundlessgeo/sdk/components/layer-list-item';
 import blockData from './Blocksnorthstl.geojson';
-import blockData1 from './surveyparcels84.geojson';
+import blockData1 from './habitable_occupied.84.geojson';
+import blockData2 from './habitable_non_occupied.geojson';
+import blockData3 from './Uninhabitable.84.geojson';
+import blockData4 from './vacantlot.84.geojson';
 import SdkMap from '@boundlessgeo/sdk/components/map';
 import SdkMapReducer from '@boundlessgeo/sdk/reducers/map';
 
@@ -51,14 +54,9 @@ class App extends Component {
     }));
 
 
-//restrict zoom not working
-    store.dispatch(SdkMapActions.updateMetadata({
-      'bnd:minzoom': 10,
-      'bnd:maxzoom': 20,
-    }));
-
 // add an OSM layer
     store.dispatch(SdkMapActions.addSource('osm', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.',
       type: 'raster',
       tileSize: 256,
       tiles: [
@@ -104,7 +102,59 @@ class App extends Component {
         'fill-color': '#ffffff',
         'fill-outline-color': '#f03b20',
       },
+     }));
+
+     //add local geojson layer
+     store.dispatch(SdkMapActions.addSource('parcel1', {
+      type: 'geojson',
+      data: blockData2
     }));
+
+    store.dispatch(SdkMapActions.addLayer({
+      id: 'parcel',
+      source: 'parcel1',
+      type: 'fill',
+      paint: {
+        'fill-opacity': 1,
+        'fill-color': '#ffffff',
+        'fill-outline-color': '#f03b20',
+     },
+    }));
+     //add local geojson layer
+     store.dispatch(SdkMapActions.addSource('parcel2', {
+      type: 'geojson',
+      data: blockData3
+    }));
+
+    store.dispatch(SdkMapActions.addLayer({
+      id: 'parcels2',
+      source: 'parcel2',
+      type: 'fill',
+      paint: {
+        'fill-opacity': 1,
+        'fill-color': '#ffffff',
+        'fill-outline-color': '#f03b20',
+      },
+    }));
+     //add local geojson layer
+     store.dispatch(SdkMapActions.addSource('parcel3', {
+      type: 'geojson',
+      data: blockData4
+    }));
+
+    store.dispatch(SdkMapActions.addLayer({
+      id: 'parcels3',
+      source: 'parcel3',
+      type: 'fill',
+      paint: {
+        'fill-opacity': 1,
+        'fill-color': '#ffffff',
+        'fill-outline-color': '#f03b20',
+      },
+    }));
+
+
+
 
 
 
@@ -143,6 +193,7 @@ class App extends Component {
               }
 
               if (features.length  > 0) {
+                console.log(features);
                 // no features, :( Let the user know nothing was there.
                 map.addPopup(<MarkFeatures features={features} coordinate={xy} closeable/>, true, true);
                 //console.log("multi");
