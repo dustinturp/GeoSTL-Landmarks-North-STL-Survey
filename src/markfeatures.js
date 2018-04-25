@@ -38,40 +38,87 @@ class MarkFeatures extends SdkPopup {
 
 
   render() {
-      let features = this.props.features
-    for (let i = 0 ; i < this.props.features.length; i ++){
-        console.log(features[i].properties['pointsparcels_What address are you at?'])
-        console.log(features[i].properties['pointsparcels_Any Structures Here?'])
-        console.log(features[i].properties['pointsparcels_What is the condition of the Building?'])
-        console.log(features[i].properties['pointsparcels_Building'])
-        console.log(features[i].properties['pointsparcels_Business name (if applicable)'])
-        console.log(features[i].properties['pointsparcels_Does a roof exist?'])
-        console.log(features[i].properties['pointsparcels_Number of exterior walls present'])
-        console.log(features[i].properties['pointsparcels_Number of visible doorways unsecure'])
-        console.log(features[i].properties['pointsparcels_Number of visible window bays unsecure'])
-        console.log(features[i].properties['pointsparcels_Secondary Structure(s)?'])
-        console.log(features[i].properties['pointsparcels_Yard Maintained'])
-        console.log(features[i].properties['pointsparcels_Notes'])
-        console.log(features[i].properties['pointsparcels_Picture of the property'])
-        console.log(features[i].properties['pointsparcels_Additional Picture'])
-        console.log(features[i].properties['pointsparcels_Additional Picture_1'])
-        console.log(features[i].properties['pointsparcels_Additional Picture_2'])
-        console.log(features[i].properties['pointsparcels_Additional Picture_3'])
-        console.log(features[i].properties['pointsparcels_Additional Picture_4'])
-        console.log(features[i].properties['pointsparcels_Ward'])
-        console.log(features[i].properties['pointsparcels_Current Owner'])
-        console.log(features[i].properties['pointsparcels_Year Built'])
-        console.log(features[i].properties['pointsparcels_Building Type_1'])
-        console.log(features[i].properties['pointsparcels_Year Built'])
-    }
-    //const feature_ids = this.props.features.map(f => f.properties.id);
 
+      let property = {} 
+      //let features = this.props.features
+    for (let i = 0 ; i < this.props.features.length; i ++){
+           //console.log(this.props.features[i])
+      if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Address']){
+        property['surveyparcels84.4.41update surveyparcels84_Address'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Address']
+      }
+      //copy and paste  the if statements  for each field 
+      if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Any Structures Here?']){
+       property['surveyparcels84.4.41update surveyparcels84_Any Structures Here?'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Any Structures Here?']
+     } 
+     if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Condition of the Building?']){
+      property['surveyparcels84.4.41update surveyparcels84_Condition of the Building'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Condition of the Building']
+    }  
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Building Type']){
+      property['surveyparcels84.4.41update surveyparcels84_Building Type'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Building Type']
+    }  
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Business name (if applicable)']){
+      property['surveyparcels84.4.41update surveyparcels84_Business name (if applicable)'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Business name (if applicable)']
+    } 
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Does a roof exist?']){
+      property['surveyparcels84.4.41update surveyparcels84_Does a roof exist?'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Does a roof exist?']
+    }
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Number of exterior walls present']){
+      property['surveyparcels84.4.41update surveyparcels84_Number of exterior walls present'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Number of exterior walls present']
+    }
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Number of visible doorways unsecure']){
+      property['surveyparcels84.4.41update surveyparcels84_Number of visible doorways unsecure'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Number of visible doorways unsecure']
+    }
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Number of visible window bays unsecure']){
+      property['surveyparcels84.4.41update surveyparcels84_Number of visible window bays unsecure'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Number of visible window bays unsecure']
+    }
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Secondary Structure']){
+      property['surveyparcels84.4.41update surveyparcels84_Secondary Structure'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Secondary Structure']
+    }
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Yard Maintained']){
+      property['surveyparcels84.4.41update surveyparcels84_Yard Maintained'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Yard Maintained']
+    }
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Notes']){
+      property['surveyparcels84.4.41update surveyparcels84_Notes'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Notes']
+    }
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Picture of the property']){
+      property['surveyparcels84.4.41update surveyparcels84_Picture of the property'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Picture of the property']
+    }
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Additional Picture2']){
+      property['surveyparcels84.4.41update surveyparcels84_Additional Picture2'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Additional Picture2']
+    }
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Notes']){
+      property['surveyparcels84.4.41update surveyparcels84_Notes'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Notes']
+    }
+
+  
+    
+    }
+    
     return this.renderPopup((
       <div className="sdk-popup-content">
         <br />
         <div>
           Feature Info:<br />
-          <p>{ 'TODO' }</p>
+          <p>{`Address: ${property['surveyparcels84.4.41update surveyparcels84_Address']}`}</p>
+          <p>{`Whats There?: ${property['surveyparcels84.4.41update surveyparcels84_Any Structures Here?']}`}</p>
+          <p>{`Building Condition: ${property['surveyparcels84.4.41update surveyparcels84_Condition of the Building']}`}</p>
+          <p>{`Building Type: ${property['surveyparcels84.4.41update surveyparcels84_Building Type']}`}</p>
+          <p> {property['surveyparcels84.4.41update surveyparcels84_Business name (if applicable)']}</p>
+          <p>{`Exterior Walls: ${property['surveyparcels84.4.41update surveyparcels84_Number of exterior walls present']}`}</p>
+          <p>{`Doorways Unsecure: ${property['surveyparcels84.4.41update surveyparcels84_Number of visible doorways unsecure']}`}</p>
+          <p>{`Window Bays Unsecure: ${property['surveyparcels84.4.41update surveyparcels84_Number of visible window bays unsecure']}`}</p>
+          <p>{`Secondary Structure: ${property['surveyparcels84.4.41update surveyparcels84_Secondary Structure']}`}</p>
+          <p>{`Yard Maintained: ${property['surveyparcels84.4.41update surveyparcels84_Yard Maintained']}`}</p>
+          <p>{ `Notes: ${property['surveyparcels84.4.41update surveyparcels84_Notes']}`}</p>
+          <p>{ `Picture 1: ${property['surveyparcels84.4.41update surveyparcels84_Picture of the property']}`}</p>
+          <p>{ 'fill feature here' }</p>
+          <p>{ 'fill feature here' }</p>
+          <p>{ 'fill feature here' }</p>
+          <p>{ 'fill feature here' }</p>
+          <p>{ 'fill feature here' }</p>
+          <p>{ 'fill feature here' }</p>
+          <p>{ 'fill feature here' }</p>
+          <p>{ 'fill feature here' }</p>
           <br />
           <button className="sdk-btn" ref={(c) => {
             if (c) {
