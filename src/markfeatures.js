@@ -83,8 +83,8 @@ class MarkFeatures extends SdkPopup {
     if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Picture of the property']){
       property['surveyparcels84.4.41update surveyparcels84_Picture of the property'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Picture of the property']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Notes']){
-      property['surveyparcels84.4.41update surveyparcels84_Notes'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Notes']
+    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Additional Picture2']){
+      property['surveyparcels84.4.41update surveyparcels84_Additional Picture2'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Additional Picture2']
     }
     if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Notes']){
       property['surveyparcels84.4.41update surveyparcels84_Notes'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Notes']
