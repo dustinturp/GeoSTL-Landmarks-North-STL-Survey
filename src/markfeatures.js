@@ -7,7 +7,7 @@ import SdkPopup from '@boundlessgeo/sdk/components/map/popup';
 
 import * as mapActions from '@boundlessgeo/sdk/actions/map';
 
-// pop up controls 
+// pop up controls
 
 class MarkFeatures extends SdkPopup {
 
@@ -39,10 +39,11 @@ class MarkFeatures extends SdkPopup {
 
   render() {
 
-      let property = {} 
+      let property = {}
       //let features = this.props.features
     for (let i = 0 ; i < this.props.features.length; i ++){
            //console.log(this.props.features[i])
+
     if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Address']){
       property['surveyparcels84.4.41update surveyparcels84_Address'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Address']
     }
@@ -51,14 +52,15 @@ class MarkFeatures extends SdkPopup {
       property['surveyparcels84.4.41update surveyparcels84_Any Structures Here?'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Any Structures Here?']
     } 
     if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Condition of the Building?']){
+
       property['surveyparcels84.4.41update surveyparcels84_Condition of the Building'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Condition of the Building']
-    }  
+    }
     if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Building Type']){
       property['surveyparcels84.4.41update surveyparcels84_Building Type'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Building Type']
-    }  
+    }
     if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Business name (if applicable)']){
       property['surveyparcels84.4.41update surveyparcels84_Business name (if applicable)'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Business name (if applicable)']
-    } 
+    }
     if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Does a roof exist?']){
       property['surveyparcels84.4.41update surveyparcels84_Does a roof exist?'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Does a roof exist?']
     }
@@ -96,10 +98,15 @@ class MarkFeatures extends SdkPopup {
       property['surveyparcels84.4.41update surveyparcels84_Ward'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Ward']
     }
 
-  
-    
+
+
     }
-    
+    // This is using dot notation b/c im a dot snob but like we talked a/b yesterday,
+    // if your property name contains character other than number or letters, use [square brackets].
+    // Also, this is out of the for loop b/c its not checking for this property on a feature
+    // but of course, do your normal thing for whatever the real feature data is.
+    property.importantUrl = 'https://i.imgur.com/sK7eeZu.gifv'
+
     return this.renderPopup((
       <div className="sdk-popup-content">
         <br />
@@ -116,11 +123,21 @@ class MarkFeatures extends SdkPopup {
           <p>{`Secondary Structure: ${property['surveyparcels84.4.41update surveyparcels84_Secondary Structure']}`}</p>
           <p>{`Yard Maintained: ${property['surveyparcels84.4.41update surveyparcels84_Yard Maintained']}`}</p>
           <p>{ `Notes: ${property['surveyparcels84.4.41update surveyparcels84_Notes']}`}</p>
+
           <p>{ `Picture 1: ${property['surveyparcels84.4.41update surveyparcels84_Picture of the property']}`}</p> 
           <p>{ `Picture 2: ${property['surveyparcels84.4.41update surveyparcels84_Additional Picture2']}`}</p>
           <p>{ `Picture 3: ${property['surveyparcels84.4.41update surveyparcels84_Additional Picture3']}`}</p>
           <p>{ `Picture 4: ${property['surveyparcels84.4.41update surveyparcels84_Additional Picture4']}`}</p>
           <p>{ `Ward: ${property['surveyparcels84.4.41update surveyparcels84_Ward']}`}</p>
+          <p>{ `Picture 1: ${property['surveyparcels84.4.41update surveyparcels84_Picture of the property']}`}</p>
+          {/* I actually don't remember why we put everything in string substitution, so here's an example w/o it
+              if it's just a  matter of adding the space between the description on the value, you can change this
+              with css too.*/}
+          <p> Picture 1: {property['surveyparcels84.4.41update surveyparcels84_Picture of the property']}</p>
+          <p> Very Important Link: <a href={property.importantUrl} target='_blank'>Click Me!</a></p>
+          <p>{ 'fill feature here' }</p>
+          <p>{ 'fill feature here' }</p>
+          <p>{ 'fill feature here' }</p>
           <p>{ 'fill feature here' }</p>
           <p>{ 'fill feature here' }</p>
           <p>{ 'fill feature here' }</p>
