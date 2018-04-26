@@ -99,8 +99,8 @@ class App extends Component {
       type: 'fill',
       paint: {
         'fill-opacity': 1,
-        'fill-color': '#ffffff',
-        'fill-outline-color': '#f03b20',
+        'fill-color': '#54C571',
+        'fill-outline-color': '#54C571',
       },
      }));
 
@@ -116,8 +116,8 @@ class App extends Component {
       type: 'fill',
       paint: {
         'fill-opacity': 1,
-        'fill-color': '#ffffff',
-        'fill-outline-color': '#f03b20',
+        'fill-color': '#FFDB58',
+        'fill-outline-color': '#FFDB58',
      },
     }));
      //add local geojson layer
@@ -132,8 +132,8 @@ class App extends Component {
       type: 'fill',
       paint: {
         'fill-opacity': 1,
-        'fill-color': '#ffffff',
-        'fill-outline-color': '#f03b20',
+        'fill-color': '#FF0000',
+        'fill-outline-color': '#FF0000',
       },
     }));
      //add local geojson layer
@@ -148,7 +148,7 @@ class App extends Component {
       type: 'fill',
       paint: {
         'fill-opacity': 1,
-        'fill-color': '#ffffff',
+        'fill-color': '#A52A2A',
         'fill-outline-color': '#f03b20',
       },
     }));

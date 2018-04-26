@@ -123,18 +123,14 @@ class MarkFeatures extends SdkPopup {
           <p>{`Secondary Structure: ${property['surveyparcels84.4.41update surveyparcels84_Secondary Structure']}`}</p>
           <p>{`Yard Maintained: ${property['surveyparcels84.4.41update surveyparcels84_Yard Maintained']}`}</p>
           <p>{ `Notes: ${property['surveyparcels84.4.41update surveyparcels84_Notes']}`}</p>
-
-          <p>{ `Picture 1: ${property['surveyparcels84.4.41update surveyparcels84_Picture of the property']}`}</p> 
-          <p>{ `Picture 2: ${property['surveyparcels84.4.41update surveyparcels84_Additional Picture2']}`}</p>
-          <p>{ `Picture 3: ${property['surveyparcels84.4.41update surveyparcels84_Additional Picture3']}`}</p>
-          <p>{ `Picture 4: ${property['surveyparcels84.4.41update surveyparcels84_Additional Picture4']}`}</p>
           <p>{ `Ward: ${property['surveyparcels84.4.41update surveyparcels84_Ward']}`}</p>
-          <p>{ `Picture 1: ${property['surveyparcels84.4.41update surveyparcels84_Picture of the property']}`}</p>
           {/* I actually don't remember why we put everything in string substitution, so here's an example w/o it
               if it's just a  matter of adding the space between the description on the value, you can change this
               with css too.*/}
-          <p> Picture 1: {property['surveyparcels84.4.41update surveyparcels84_Picture of the property']}</p>
-          <p> Very Important Link: <a href={property.importantUrl} target='_blank'>Click Me!</a></p>
+          <p> Picture 1: <a href={property['surveyparcels84.4.41update surveyparcels84_Picture of the property']} target='_blank'>Picture</a></p>
+          <p> Picture 2: <a href={property['surveyparcels84.4.41update surveyparcels84_Additional Picture2']} target='_blank'>Picture</a></p>
+          <p> Picture 3: <a href={property['surveyparcels84.4.41update surveyparcels84_Additional Picture3']} target='_blank'>Picture</a></p>
+          <p> Picture 4: <a href={property['surveyparcels84.4.41update surveyparcels84_Additional Picture4']} target='_blank'>Picture</a></p>
           <p>{ 'fill feature here' }</p>
           <p>{ 'fill feature here' }</p>
           <p>{ 'fill feature here' }</p>
