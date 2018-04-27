@@ -82,7 +82,7 @@ class App extends Component {
      source: 'blocks',
       type: 'fill',
       paint: {
-        'fill-opacity': 0.2,
+        'fill-opacity': 0.4,
         'fill-color': '#348781',
         'fill-outline-color': '#f03b20',
       },
@@ -99,8 +99,8 @@ class App extends Component {
       type: 'fill',
       paint: {
         'fill-opacity': 1,
-        'fill-color': '#54C571',
-        'fill-outline-color': '#54C571',
+        'fill-color': '#000080',
+        'fill-outline-color': '#000080',
       },
      }));
 
@@ -170,14 +170,14 @@ class App extends Component {
           <h1 className="App-title">GeoSTL and the Landmarks Association Survey Results</h1>
         </header>
         <p className="App-intro">
-        The Survey was done on Saturday, February 3rd in North St Louis. A total of 154 properties were inventoried. The targeted properties are or were once owned by North Side Regenreation. 
-        Majority of the properties were found to be uninhabitable.
+        The Survey was done on Saturday, February 3rd in North St Louis. A total of 154 properties were inventoried. The targeted properties are owned by North Side Regenreation. 
+        Majority of the properties were found to be uninhabitable, unmaintained, and unsecure from the elements.
         </p>
         <p className="App-legend">
         Click on the parcels to view information.
         </p>
         <p className="App-legend">
-        Habitable Occupied Buildings are: <font color="green">Green</font> 
+        Habitable Occupied Buildings are: <font color="blue">Blue</font> 
         </p>
         <p className="App-legend">
         Habitable Non Occupied Buildings are: <font color="yellow">Yellow</font>
@@ -220,6 +220,9 @@ class App extends Component {
               console.error('An error occurred.', exception);
             });
         }}/>
+        <p className="App-intro">
+        Filler for more informaiton and thank you to our volunteers for this crowd sourced efforit. Special thankks to Carly(addlink) and Willie at Boundless for helping with the web map
+        </p>
       </div>
     );
   }
