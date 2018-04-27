@@ -219,10 +219,7 @@ li.sdk-layer {
   list-style: none; }
 
 .sdk-map {
-  position: relative; 
-  margin-top: 0px;
-  padding: 25px;}
-  
+  position: relative; }
 
 .sdk-map .controls {
   position: absolute;
@@ -235,12 +232,12 @@ li.sdk-layer {
   text-align: center; }
 
 .App-logo {
-  height: 60px;
+  height: 50px;
   padding: 20px; }
 
 .App-header {
   background-color: #222;
-  height: 166px;
+  height: 200px;
   padding: 20px;
   color: white; }
 
@@ -248,16 +245,7 @@ li.sdk-layer {
   font-size: 1.5em; }
 
 .App-intro {
-  font-size: medium; 
-  height: 120px;
-  padding: 20px; }
-
-.App-legend {
-  background-color: #D1D0CE;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: medium; }
-  
+  font-size: large; }
 
 @keyframes App-logo-spin {}.sdk-popup-content {
   min-width: 15rem; }

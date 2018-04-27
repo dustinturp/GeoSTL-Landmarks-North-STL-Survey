@@ -44,58 +44,57 @@ class MarkFeatures extends SdkPopup {
     for (let i = 0 ; i < this.props.features.length; i ++){
            //console.log(this.props.features[i])
 
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Address']){
-      property['surveyparcels84.4.41update surveyparcels84_Address'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Address']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Address']){
+      property['McKee Survey Results - All_data_Address'] = this.props.features[i].properties['McKee Survey Results - All_data_Address']
     }
       //copy and paste  the if statements  for each field 
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Any Structures Here?']){
-      property['surveyparcels84.4.41update surveyparcels84_Any Structures Here?'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Any Structures Here?']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Any Structures Here?']){
+      property['McKee Survey Results - All_data_Any Structures Here?'] = this.props.features[i].properties['McKee Survey Results - All_data_Any Structures Here?']
     } 
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Condition of the Building?']){
-
-      property['surveyparcels84.4.41update surveyparcels84_Condition of the Building'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Condition of the Building']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Condition']){
+      property['McKee Survey Results - All_data_Condition'] = this.props.features[i].properties['McKee Survey Results - All_data_Condition']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Building Type']){
-      property['surveyparcels84.4.41update surveyparcels84_Building Type'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Building Type']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Type']){
+      property['McKee Survey Results - All_data_Type'] = this.props.features[i].properties['McKee Survey Results - All_data_Type']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Business name (if applicable)']){
-      property['surveyparcels84.4.41update surveyparcels84_Business name (if applicable)'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Business name (if applicable)']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Business name (if applicable)']){
+      property['McKee Survey Results - All_data_Business name (if applicable)'] = this.props.features[i].properties['McKee Survey Results - All_data_Business name (if applicable)']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Does a roof exist?']){
-      property['surveyparcels84.4.41update surveyparcels84_Does a roof exist?'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Does a roof exist?']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Does a roof exist?']){
+      property['McKee Survey Results - All_data_Does a roof exist?'] = this.props.features[i].properties['McKee Survey Results - All_data_Does a roof exist?']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Number of exterior walls present']){
-      property['surveyparcels84.4.41update surveyparcels84_Number of exterior walls present'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Number of exterior walls present']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Number of exterior walls present']){
+      property['McKee Survey Results - All_data_Number of exterior walls present'] = this.props.features[i].properties['McKee Survey Results - All_data_Number of exterior walls present']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Number of visible doorways unsecure']){
-      property['surveyparcels84.4.41update surveyparcels84_Number of visible doorways unsecure'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Number of visible doorways unsecure']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Visible doorways unsecure']){
+      property['McKee Survey Results - All_data_Visible doorways unsecure'] = this.props.features[i].properties['McKee Survey Results - All_data_Visible doorways unsecure']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Number of visible window bays unsecure']){
-      property['surveyparcels84.4.41update surveyparcels84_Number of visible window bays unsecure'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Number of visible window bays unsecure']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Visible window bays unsecure']){
+      property['McKee Survey Results - All_data_Visible window bays unsecure'] = this.props.features[i].properties['McKee Survey Results - All_data_Visible window bays unsecure']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Secondary Structure']){
-      property['surveyparcels84.4.41update surveyparcels84_Secondary Structure'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Secondary Structure']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Secondary Structure']){
+      property['McKee Survey Results - All_data_Secondary Structure'] = this.props.features[i].properties['McKee Survey Results - All_data_Secondary Structure']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Yard Maintained']){
-      property['surveyparcels84.4.41update surveyparcels84_Yard Maintained'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Yard Maintained']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Yard Maintained']){
+      property['McKee Survey Results - All_data_Yard Maintained'] = this.props.features[i].properties['McKee Survey Results - All_data_Yard Maintained']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Notes']){
-      property['surveyparcels84.4.41update surveyparcels84_Notes'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Notes']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Notes']){
+      property['McKee Survey Results - All_data_Notes'] = this.props.features[i].properties['McKee Survey Results - All_data_Notes']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Picture of the property']){
-      property['surveyparcels84.4.41update surveyparcels84_Picture of the property'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Picture of the property']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Picture of the property']){
+      property['McKee Survey Results - All_data_Picture of the property'] = this.props.features[i].properties['McKee Survey Results - All_data_Picture of the property']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Additional Picture2']){
-      property['surveyparcels84.4.41update surveyparcels84_Additional Picture2'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Additional Picture2']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Additional Picture2']){
+      property['McKee Survey Results - All_data_Additional Picture2'] = this.props.features[i].properties['McKee Survey Results - All_data_Additional Picture2']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Additional Picture3']){
-      property['surveyparcels84.4.41update surveyparcels84_Additional Picture3'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Additional Picture3']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Additional Picture3']){
+      property['McKee Survey Results - All_data_Additional Picture3'] = this.props.features[i].properties['McKee Survey Results - All_data_Additional Picture3']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Additional Picture4']){
-      property['surveyparcels84.4.41update surveyparcels84_Additional Picture4'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Additional Picture4']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Additional Picture4']){
+      property['McKee Survey Results - All_data_Additional Picture4'] = this.props.features[i].properties['McKee Survey Results - All_data_Additional Picture4']
     }
-    if (this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Ward']){
-      property['surveyparcels84.4.41update surveyparcels84_Ward'] = this.props.features[i].properties['surveyparcels84.4.41update surveyparcels84_Ward']
+    if (this.props.features[i].properties['McKee Survey Results - All_data_Ward']){
+      property['McKee Survey Results - All_data_Ward'] = this.props.features[i].properties['McKee Survey Results - All_data_Ward']
     }
 
 
@@ -112,32 +111,26 @@ class MarkFeatures extends SdkPopup {
         <br />
         <div>
           Feature Info:<br />
-          <p>{`Address: ${property['surveyparcels84.4.41update surveyparcels84_Address']}`}</p>
-          <p>{`Whats There?: ${property['surveyparcels84.4.41update surveyparcels84_Any Structures Here?']}`}</p>
-          <p>{`Building Condition: ${property['surveyparcels84.4.41update surveyparcels84_Condition of the Building']}`}</p>
-          <p>{`Building Type: ${property['surveyparcels84.4.41update surveyparcels84_Building Type']}`}</p>
-          <p>{property['surveyparcels84.4.41update surveyparcels84_Business name (if applicable)']}</p>
-          <p>{`Exterior Walls: ${property['surveyparcels84.4.41update surveyparcels84_Number of exterior walls present']}`}</p>
-          <p>{`Doorways Unsecure: ${property['surveyparcels84.4.41update surveyparcels84_Number of visible doorways unsecure']}`}</p>
-          <p>{`Window Bays Unsecure: ${property['surveyparcels84.4.41update surveyparcels84_Number of visible window bays unsecure']}`}</p>
-          <p>{`Secondary Structure: ${property['surveyparcels84.4.41update surveyparcels84_Secondary Structure']}`}</p>
-          <p>{`Yard Maintained: ${property['surveyparcels84.4.41update surveyparcels84_Yard Maintained']}`}</p>
-          <p>{ `Notes: ${property['surveyparcels84.4.41update surveyparcels84_Notes']}`}</p>
-          <p>{ `Ward: ${property['surveyparcels84.4.41update surveyparcels84_Ward']}`}</p>
+          <p>{`Address: ${property['McKee Survey Results - All_data_Address']}`}</p>
+          <p>{`Whats There?: ${property['McKee Survey Results - All_data_Any Structures Here?']}`}</p>
+          <p>{`Building Condition: ${property['McKee Survey Results - All_data_Condition']}`}</p>
+          <p>{`Building Type: ${property['McKee Survey Results - All_data_Type']}`}</p>
+          <p>{property['McKee Survey Results - All_data_Business name (if applicable)']}</p>
+          <p>{`Roof Status: ${property['McKee Survey Results - All_data_Does a roof exist?']}`}</p>
+          <p>{`Exterior Walls: ${property['McKee Survey Results - All_data_Number of exterior walls present']}`}</p>
+          <p>{`Doorways Unsecure: ${property['McKee Survey Results - All_data_Visible doorways unsecure']}`}</p>
+          <p>{`Window Bays Unsecure: ${property['"McKee Survey Results - All_data_Visible window bays unsecure']}`}</p>
+          <p>{`Secondary Structure: ${property['McKee Survey Results - All_data_Secondary Structure']}`}</p>
+          <p>{`Yard Maintained: ${property['McKee Survey Results - All_data_Yard Maintained']}`}</p>
+          <p>{ `Notes: ${property['McKee Survey Results - All_data_Notes']}`}</p>
+          <p>{ `Ward: ${property['McKee Survey Results - All_data_Ward']}`}</p>
           {/* I actually don't remember why we put everything in string substitution, so here's an example w/o it
               if it's just a  matter of adding the space between the description on the value, you can change this
               with css too.*/}
-          <p> Picture 1: <a href={property['surveyparcels84.4.41update surveyparcels84_Picture of the property']} target='_blank'>Picture</a></p>
-          <p> Picture 2: <a href={property['surveyparcels84.4.41update surveyparcels84_Additional Picture2']} target='_blank'>Picture</a></p>
-          <p> Picture 3: <a href={property['surveyparcels84.4.41update surveyparcels84_Additional Picture3']} target='_blank'>Picture</a></p>
-          <p> Picture 4: <a href={property['surveyparcels84.4.41update surveyparcels84_Additional Picture4']} target='_blank'>Picture</a></p>
-          <p>{ 'fill feature here' }</p>
-          <p>{ 'fill feature here' }</p>
-          <p>{ 'fill feature here' }</p>
-          <p>{ 'fill feature here' }</p>
-          <p>{ 'fill feature here' }</p>
-          <p>{ 'fill feature here' }</p>
-          <p>{ 'fill feature here' }</p>
+          <p> Picture 1: <a href={property['McKee Survey Results - All_data_Picture of the property']} target='_blank'>Picture</a></p>
+          <p> Picture 2: <a href={property['McKee Survey Results - All_data_Additional Picture2']} target='_blank'>Picture</a></p>
+          <p> Picture 3: <a href={property['McKee Survey Results - All_data_Additional Picture3']} target='_blank'>Picture</a></p>
+          <p> Picture 4: <a href={property['McKee Survey Results - All_data_Additional Picture4']} target='_blank'>Picture</a></p>
           <br />
           <button className="sdk-btn" ref={(c) => {
             if (c) {
