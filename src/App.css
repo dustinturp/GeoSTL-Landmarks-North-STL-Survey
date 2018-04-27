@@ -219,7 +219,8 @@ li.sdk-layer {
   list-style: none; }
 
 .sdk-map {
-  position: relative; }
+  position: relative; 
+  padding: 25px;}
 
 .sdk-map .controls {
   position: absolute;
@@ -246,6 +247,12 @@ li.sdk-layer {
 
 .App-intro {
   font-size: large; }
+
+.App-legend {
+  background-color: #D1D0CE;
+  font-size: large;
+  margin-top: 0px;
+  margin-bottom: 0px; }
 
 @keyframes App-logo-spin {}.sdk-popup-content {
   min-width: 15rem; }
