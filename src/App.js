@@ -23,7 +23,7 @@ import SdkMousePosition from '@boundlessgeo/sdk/components/map/mouseposition';
 
 import SdkPopup from '@boundlessgeo/sdk/components/map/popup';
 import MarkFeatures from './markfeatures';
-//i mport popups from './popup.js';
+
 
 //import SdkLayerList from '@boundlessgeo/sdk/components/layer-list';
 //import SdkLayerListItem from '@boundlessgeo/sdk/components/layer-list-item';
@@ -82,8 +82,8 @@ class App extends Component {
      source: 'blocks',
       type: 'fill',
       paint: {
-        'fill-opacity': 0.3,
-        'fill-color': '#feb24c',
+        'fill-opacity': 0.2,
+        'fill-color': '#348781',
         'fill-outline-color': '#f03b20',
       },
     }));
@@ -167,11 +167,28 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
 
           <img src={logo2} className="App-logo" alt="logo" />
-          <h1 className="App-title">GeoSTL and the Landmarks association Survey Results</h1>
+          <h1 className="App-title">GeoSTL and the Landmarks Association Survey Results</h1>
         </header>
         <p className="App-intro">
-        The Survey was done on Saturday, February 3rd in North St Louis. A total of 154 properties were inventoried. Majority of the properties are uninhabitable.
+        The Survey was done on Saturday, February 3rd in North St Louis. A total of 154 properties were inventoried. The targeted properties are or were once owned by North Side Regenreation. 
+        Majority of the properties were found to be uninhabitable.
         </p>
+        <p className="App-legend">
+        Click on the parcels to view information.
+        </p>
+        <p className="App-legend">
+        Habitable Occupied Buildings are: <font color="green">Green</font> 
+        </p>
+        <p className="App-legend">
+        Habitable Non Occupied Buildings are: <font color="yellow">Yellow</font>
+        </p>
+        <p className="App-legend">
+        Uninhabitabl Buildings are: <font color="red">Red</font>
+        </p>
+        <p className="App-legend">
+        Vacant Lots are: <font color="brown">Brown</font>
+        </p>
+
         <SdkMap store={store}
           stopEvent
           includeFeaturesOnClick
