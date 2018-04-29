@@ -220,7 +220,8 @@ li.sdk-layer {
 
 .sdk-map {
   position: relative; 
-  padding: 25px;}
+  padding: 25px;
+  background-color: #E5E4E2}
 
 .sdk-map .controls {
   position: absolute;
@@ -237,16 +238,20 @@ li.sdk-layer {
   padding: 20px; }
 
 .App-header {
-  background-color: #222;
-  height: 200px;
-  padding: 20px;
+  background-color: #000000;
+  height: 160px;
+  padding: 10px;
   color: white; }
 
 .App-title {
   font-size: 1.5em; }
 
 .App-intro {
-  font-size: large; }
+  background-color: #E5E4E2;
+  font-size: medium;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px; }
 
 .App-legend {
   background-color: #D1D0CE;

@@ -148,8 +148,8 @@ class App extends Component {
       type: 'fill',
       paint: {
         'fill-opacity': 1,
-        'fill-color': '#A52A2A',
-        'fill-outline-color': '#f03b20',
+        'fill-color': '#6F4E37',
+        'fill-outline-color': '#6F4E37',
       },
     }));
 
@@ -165,13 +165,12 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-
           <img src={logo2} className="App-logo" alt="logo" />
           <h1 className="App-title">GeoSTL and the Landmarks Association Survey Results</h1>
         </header>
         <p className="App-intro">
         The Survey was done on Saturday, February 3rd in North St Louis. A total of 154 properties were inventoried. The targeted properties are owned by North Side Regenreation. 
-        Majority of the properties were found to be uninhabitable, unmaintained, and unsecure from the elements.
+        Majority of the properties were found to be uninhabitable, unmaintained, and unsecure.
         </p>
         <p className="App-legend">
         Click on the parcels to view information.
@@ -221,7 +220,14 @@ class App extends Component {
             });
         }}/>
         <p className="App-intro">
-        Filler for more informaiton and thank you to our volunteers for this crowd sourced efforit. Special thankks to Carly(addlink) and Willie at Boundless for helping with the web map
+        Visit the <a href="https://photos.app.goo.gl/RZpAIOlnIHodQ7Gv2">Google Photo Album</a> to view all of the pictures from the suvey. <br>
+        </br>
+        The data from the survey is available from a <a href="https://docs.google.com/spreadsheets/d/14WnxYCA1MKz50Yy4zqYJSojGhghQHuGHghVZqY6-tdY/edit?usp=sharing">spreadsheet</a>. <br>
+        </br>The File contains addresses, coordinates, parcel handles, parcle ID, and Wards to link to other GIS datasets. <br>
+        </br>
+        Thank you to our volunteers for this crowdsourced effort. Special thanks to <a href="https://github.com/CarlyLanglois">Carly</a>  and <a href="https://github.com/wnordmann">Willie</a>  at <a href="http://boundlessgeo.com/">Boundless</a> for helping with constructing this web map.<br>
+        </br>
+        This application was made using <a href="http://sdk.boundlessgeo.com/">Boundless SDK</a> 
         </p>
       </div>
     );
