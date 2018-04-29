@@ -115,7 +115,7 @@ class App extends Component {
       source: 'parcel1',
       type: 'fill',
       paint: {
-        'fill-opacity': 1,
+        'fill-opacity': .9,
         'fill-color': '#FFDB58',
         'fill-outline-color': '#FFDB58',
      },
