@@ -216,9 +216,9 @@ class App extends Component {
         <iframe width="100%" height="300px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyF2cnpB2TBTxkbs5jyDm0iuqyO2JUNI4RbcEkM0HVKxgZjyfCD0sa4i2NTNCNfZ5pHYiLxjpapAVo/pubhtml?widget=true&amp;headers=false"></iframe>
         </p>
         <p className="App-outro">
-        Visit the <a href="https://photos.app.goo.gl/RZpAIOlnIHodQ7Gv2">Google Photo Album</a> to view all of the pictures from the suvey. <br>
+        Click  <a href="https://docs.google.com/spreadsheets/d/14WnxYCA1MKz50Yy4zqYJSojGhghQHuGHghVZqY6-tdY/edit?usp=sharing">spreadsheet</a> to view  the data in a new tab <br> 
         </br>
-        The data from the survey is available from a <a href="https://docs.google.com/spreadsheets/d/14WnxYCA1MKz50Yy4zqYJSojGhghQHuGHghVZqY6-tdY/edit?usp=sharing">spreadsheet</a>. <br>
+        Visit the <a href="https://photos.app.goo.gl/RZpAIOlnIHodQ7Gv2">Google Photo Album</a> to view all of the pictures from the suvey. <br>
         </br>The File contains addresses, coordinates, parcel handles, parcle ID, and Wards to link to other GIS datasets. <br>
         </br>
         Thank you to our volunteers for this crowdsourced effort. Special thanks to <a href="https://github.com/CarlyLanglois">Carly</a>  and <a href="https://github.com/wnordmann">Willie</a>  at <a href="http://boundlessgeo.com/">Boundless</a> for helping with constructing this web map.<br>
