@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import React from 'react';
+import {Provider} from 'react-redux';
 import ReactDOM from 'react-dom';
 import logo from './geostl2.png';
 import logo2 from './landmarks_logo.gif';
@@ -30,13 +30,9 @@ import FilterComponent from './filter';
 import * as SdkMapActions from '@boundlessgeo/sdk/actions/map';
 
 
-
-import {Provider} from 'react-redux';
-
 const store = createStore(combineReducers({
   'map': SdkMapReducer,
 }));
-
 
 
 class App extends Component {
@@ -154,7 +150,6 @@ class App extends Component {
 
   }
 
-
   render() {
     
     return (
@@ -162,7 +157,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <img src={logo2} className="App-logo" alt="logo" />
-          <h1 className="App-title">GeoSTL and the <a href="https://www.landmarks-stl.org/"> <font color="white">Landmarks Association</font></a> Survey Results</h1>
+          <h1 className="App-title"> <a href="https://www.meetup.com/GeoSTL/"> <font color="white">GeoSTL</font></a> and the <a href="https://www.landmarks-stl.org/"> <font color="white">Landmarks Association</font></a> Survey Results</h1>
         </header>
         <p className="App-intro">
         The Survey was done on Saturday, February 3rd in North St Louis. A total of 154 properties were inventoried. The targeted properties are owned by North Side Regenreation. 
@@ -216,10 +211,11 @@ class App extends Component {
         <iframe width="100%" height="300px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyF2cnpB2TBTxkbs5jyDm0iuqyO2JUNI4RbcEkM0HVKxgZjyfCD0sa4i2NTNCNfZ5pHYiLxjpapAVo/pubhtml?widget=true&amp;headers=false"></iframe>
         </p>
         <p className="App-outro">
-        Click  <a href="https://docs.google.com/spreadsheets/d/14WnxYCA1MKz50Yy4zqYJSojGhghQHuGHghVZqY6-tdY/edit?usp=sharing">spreadsheet</a> to view  the data in a new tab <br> 
+        Click  <a href="https://docs.google.com/spreadsheets/d/14WnxYCA1MKz50Yy4zqYJSojGhghQHuGHghVZqY6-tdY/edit?usp=sharing">here</a> to view  the data in a new tab and download the file. <br> 
+        </br>
+        The File contains addresses, coordinates, parcel handles, parcle ID, and Wards to link to other GIS datasets. <br>
         </br>
         Visit the <a href="https://photos.app.goo.gl/RZpAIOlnIHodQ7Gv2">Google Photo Album</a> to view all of the pictures from the suvey. <br>
-        </br>The File contains addresses, coordinates, parcel handles, parcle ID, and Wards to link to other GIS datasets. <br>
         </br>
         Thank you to our volunteers for this crowdsourced effort. Special thanks to <a href="https://github.com/CarlyLanglois">Carly</a>  and <a href="https://github.com/wnordmann">Willie</a>  at <a href="http://boundlessgeo.com/">Boundless</a> for helping with constructing this web map.<br>
         </br>
