@@ -1,38 +1,60 @@
 @import "@boundlessgeo/sdk/stylesheet/sdk.scss";
 .App {
   text-align: center;
+  background-color: #E5E4E2;
 }
 
 .App-logo {
 height: 50px;
-padding: 20px;
+padding: 10px;
 }
 
 .App-header {
   background-color: #000000;
-  height: 160px;
-  padding: 10px;
+  height: 130px;
+  padding: 7px;
   color: white;
 }
 
 .App-title {
   font-size: 1.5em;
+  margin-top: 0px;
+  margin-bottom: 0px; 
 }
 
 .App-intro {
   background-color: #E5E4E2;
   font-size: medium;
-  padding: 15px;
+  padding: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
+.App-outro {
+  background-color: #E5E4E2;
+  font-size: medium;
+  margin-top: 150px;
+  margin-bottom: 0px;
+  padding: 20px; 
+}
+
 .App-legend {
   background-color: #D1D0CE;
+  border: 5px solid gray;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
   font-size: large;
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.App-spreadsheet{
+  width: 80%;
+  height: 150px;
+  padding: 25px;
+}
+]
 
 @keyframes App-logo-spin {
 

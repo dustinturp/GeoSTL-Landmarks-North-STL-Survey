@@ -100,10 +100,7 @@ class MarkFeatures extends SdkPopup {
 
 
     }
-    // This is using dot notation b/c im a dot snob but like we talked a/b yesterday,
-    // if your property name contains character other than number or letters, use [square brackets].
-    // Also, this is out of the for loop b/c its not checking for this property on a feature
-    // but of course, do your normal thing for whatever the real feature data is.
+ 
     property.importantUrl = 'https://i.imgur.com/sK7eeZu.gifv'
 
     return this.renderPopup((

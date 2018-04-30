@@ -20,9 +20,8 @@ import SdkMapReducer from '@boundlessgeo/sdk/reducers/map';
 import SdkZoomControl from '@boundlessgeo/sdk/components/map/zoom-control';
 import SdkZoomSlider from '@boundlessgeo/sdk/components/map/zoom-slider';
 import SdkMousePosition from '@boundlessgeo/sdk/components/map/mouseposition';
-
-import SdkPopup from '@boundlessgeo/sdk/components/map/popup';
 import MarkFeatures from './markfeatures';
+import FilterComponent from './filter';
 
 
 //import SdkLayerList from '@boundlessgeo/sdk/components/layer-list';
@@ -153,40 +152,34 @@ class App extends Component {
       },
     }));
 
-
-
-
-
-
   }
 
+
   render() {
+    
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <img src={logo2} className="App-logo" alt="logo" />
-          <h1 className="App-title">GeoSTL and the Landmarks Association Survey Results</h1>
+          <h1 className="App-title">GeoSTL and the <a href="https://www.landmarks-stl.org/"> <font color="white">Landmarks Association</font></a> Survey Results</h1>
         </header>
         <p className="App-intro">
         The Survey was done on Saturday, February 3rd in North St Louis. A total of 154 properties were inventoried. The targeted properties are owned by North Side Regenreation. 
         Majority of the properties were found to be uninhabitable, unmaintained, and unsecure.
         </p>
         <p className="App-legend">
-        Click on the parcels to view information.
-        </p>
-        <p className="App-legend">
-        Habitable Occupied Buildings are: <font color="blue">Blue</font> 
-        </p>
-        <p className="App-legend">
-        Habitable Non Occupied Buildings are: <font color="yellow">Yellow</font>
-        </p>
-        <p className="App-legend">
-        Uninhabitabl Buildings are: <font color="red">Red</font>
-        </p>
-        <p className="App-legend">
+        Click on the parcels to view information. <br>
+        </br>
+        Habitable Occupied Buildings are: <font color="blue">Blue</font> <br>
+        </br>
+        Habitable Non Occupied Buildings are: <font color="yellow">Yellow</font> <br>
+        </br>
+        Uninhabitabl Buildings are: <font color="red">Red</font><br>
+        </br>
         Vacant Lots are: <font color="brown">Brown</font>
         </p>
+       
 
         <SdkMap store={store}
           stopEvent
@@ -219,7 +212,10 @@ class App extends Component {
               console.error('An error occurred.', exception);
             });
         }}/>
-        <p className="App-intro">
+        <p className="App-spreadsheet">
+        <iframe width="100%" height="300px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyF2cnpB2TBTxkbs5jyDm0iuqyO2JUNI4RbcEkM0HVKxgZjyfCD0sa4i2NTNCNfZ5pHYiLxjpapAVo/pubhtml?widget=true&amp;headers=false"></iframe>
+        </p>
+        <p className="App-outro">
         Visit the <a href="https://photos.app.goo.gl/RZpAIOlnIHodQ7Gv2">Google Photo Album</a> to view all of the pictures from the suvey. <br>
         </br>
         The data from the survey is available from a <a href="https://docs.google.com/spreadsheets/d/14WnxYCA1MKz50Yy4zqYJSojGhghQHuGHghVZqY6-tdY/edit?usp=sharing">spreadsheet</a>. <br>
