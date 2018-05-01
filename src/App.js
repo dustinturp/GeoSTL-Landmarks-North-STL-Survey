@@ -213,12 +213,14 @@ class App extends Component {
         <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTGCj1H0APvcoJJpK-AWfNiHrZVhJY-wDHE66klTMUEFtBhnmgqhAYkNaFbUXc0bCk8SLDru9kudwZM/embed?start=true&loop=true&delayms=5000" frameborder="0" width="569" height="345" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         </p>
         <p className="App-outro">
-        Click  <a target="_blank" href="https://docs.google.com/spreadsheets/d/14WnxYCA1MKz50Yy4zqYJSojGhghQHuGHghVZqY6-tdY/edit?usp=sharing">here</a> to view the data in a new tab and download the file. <br> 
-        </br>
-        The File contains addresses, coordinates, parcel handles, parcle ID, and Wards to link to other GIS datasets. <br>
-        </br>
-        Visit the <a target="_blank" target="_blank" href="https://photos.app.goo.gl/RZpAIOlnIHodQ7Gv2">Google Photo Album</a> to view all of the pictures from the suvey. <br>
-        </br>
+        <li> Click  <a target="_blank" href="https://docs.google.com/spreadsheets/d/14WnxYCA1MKz50Yy4zqYJSojGhghQHuGHghVZqY6-tdY/edit?usp=sharing">here</a> to view the data in a new tab and download the file.
+        </li>
+        <li> The File contains addresses, coordinates, parcel handles, parcle ID, and Wards to link to other GIS datasets.
+          </li>
+        <li>Visit the <a target="_blank" target="_blank" href="https://photos.app.goo.gl/RZpAIOlnIHodQ7Gv2">Google Photo Album</a> to view all of the pictures from the suvey.</li>
+        <li> You are able to download the entire photo album from the album page. </li>
+        </p>
+        <p className="App-footer">
         Thank you to our volunteers for this crowdsourced effort. Special thanks to <a target="_blank" href="https://github.com/CarlyLanglois">Carly</a>  and <a target="_blank" href="https://github.com/wnordmann">Willie</a>  at <a target="_blank" href="http://boundlessgeo.com/">Boundless</a> for helping with constructing this web map.<br>
         </br>
         This application was made using <a target="_blank" href="http://sdk.boundlessgeo.com/">Boundless SDK</a> 

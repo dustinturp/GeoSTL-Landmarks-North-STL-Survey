@@ -262,7 +262,10 @@ li.sdk-layer {
   font-size: medium;
   margin-top: 200px;
   margin-bottom: 0px;
-  padding: 20px; }
+  padding: 20px; 
+  width:700px;
+  margin:0 auto;
+  text-align:left;}
 
 .App-legend {
   background-color: #D1D0CE;
@@ -279,6 +282,10 @@ li.sdk-layer {
    width: 100%;
   height: 150px;
   margin-bottom:200px}
+
+.App-footer{
+  background-color: #E5E4E2;
+  font-size: medium;}
 
 @keyframes App-logo-spin {}.sdk-popup-content {
   min-width: 15rem; }
