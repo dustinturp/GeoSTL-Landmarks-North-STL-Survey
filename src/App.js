@@ -95,7 +95,7 @@ class App extends Component {
       paint: {
         'fill-opacity': 1,
         'fill-color': '#000080',
-        'fill-outline-color': '#000080',
+        'fill-outline-color': '#3B9C9C',
       },
      }));
 
@@ -128,7 +128,7 @@ class App extends Component {
       paint: {
         'fill-opacity': 1,
         'fill-color': '#FF0000',
-        'fill-outline-color': '#FF0000',
+        'fill-outline-color': '#E18B6B',
       },
     }));
      //add local geojson layer
@@ -144,7 +144,6 @@ class App extends Component {
       paint: {
         'fill-opacity': 1,
         'fill-color': '#6F4E37',
-        'fill-outline-color': '#6F4E37',
       },
     }));
 
