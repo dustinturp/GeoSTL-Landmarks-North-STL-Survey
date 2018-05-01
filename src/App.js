@@ -209,6 +209,9 @@ class App extends Component {
         <p className="App-spreadsheet">
         <iframe width="100%" height="300px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyF2cnpB2TBTxkbs5jyDm0iuqyO2JUNI4RbcEkM0HVKxgZjyfCD0sa4i2NTNCNfZ5pHYiLxjpapAVo/pubhtml?widget=true&amp;headers=false"></iframe>
         </p>
+        <p className="App-spreadsheet">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTGCj1H0APvcoJJpK-AWfNiHrZVhJY-wDHE66klTMUEFtBhnmgqhAYkNaFbUXc0bCk8SLDru9kudwZM/embed?start=true&loop=true&delayms=5000" frameborder="0" width="569" height="345" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </p>
         <p className="App-outro">
         Click  <a target="_blank" href="https://docs.google.com/spreadsheets/d/14WnxYCA1MKz50Yy4zqYJSojGhghQHuGHghVZqY6-tdY/edit?usp=sharing">here</a> to view the data in a new tab and download the file. <br> 
         </br>
