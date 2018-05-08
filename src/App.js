@@ -40,7 +40,7 @@ class App extends Component {
 
 
 
-    store.dispatch(SdkMapActions.setView([-90.21, 38.645], 13.9));
+    store.dispatch(SdkMapActions.setView([-90.21, 38.649], 13.9));
      // Restrict the zoom levels
 
     store.dispatch(SdkMapActions.updateMetadata({
