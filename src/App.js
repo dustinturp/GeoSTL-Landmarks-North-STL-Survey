@@ -159,7 +159,7 @@ class App extends Component {
           <h1 className="App-title"> <a target="_blank" href="https://www.meetup.com/GeoSTL/"> <font color="white">GeoSTL</font></a> and the <a target="_blank" href="https://www.landmarks-stl.org/"> <font color="white">Landmarks Association</font></a> Survey Results</h1>
         </header>
         <p className="App-intro">
-        The Survey was done on Saturday, February 3rd in North St Louis. A total of 154 properties were inventoried. The targeted properties are owned by North Side Regenreation. 
+        The Survey was done on Saturday, February 3rd in North St Louis. The properties are owned by North Side Regenreation that were orrigaionally marked for rehanb. A total of 154 properties were inventoried.
         Majority of the properties were found to be uninhabitable, unmaintained, and unsecure.
         </p>
         <p className="App-legend">
@@ -213,7 +213,7 @@ class App extends Component {
         <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTGCj1H0APvcoJJpK-AWfNiHrZVhJY-wDHE66klTMUEFtBhnmgqhAYkNaFbUXc0bCk8SLDru9kudwZM/embed?start=true&loop=true&delayms=5000" frameborder="0" width="569" height="345" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         </p>
         <p className="App-outro">
-        <li> Click  <a target="_blank" href="https://docs.google.com/spreadsheets/d/14WnxYCA1MKz50Yy4zqYJSojGhghQHuGHghVZqY6-tdY/edit?usp=sharing">here</a> to view the data in a new tab and download the file.
+        <li> Click  <a target="_blank" href="https://docs.google.com/spreadsheets/d/14WnxYCA1MKz50Yy4zqYJSojGhghQHuGHghVZqY6-tdY/edit?usp=sharing">here</a> to view the spreadsheet in a new tab and download the file.
         </li>
         <li> The File contains addresses, coordinates, parcel handles, parcle ID, and Wards to link to other GIS datasets.
           </li>
@@ -223,7 +223,9 @@ class App extends Component {
         <p className="App-footer">
         Thank you to our volunteers for this crowdsourced effort. Special thanks to <a target="_blank" href="https://github.com/CarlyLanglois">Carly</a>  and <a target="_blank" href="https://github.com/wnordmann">Willie</a>  at <a target="_blank" href="http://boundlessgeo.com/">Boundless</a> for helping with constructing this web map.<br>
         </br>
-        This application was made using <a target="_blank" href="http://sdk.boundlessgeo.com/">Boundless SDK</a> 
+        This application was made using <a target="_blank" href="http://sdk.boundlessgeo.com/">Boundless SDK</a> <br>
+        </br>
+        Questions or comments can be emailed to me@dustin-turpin.me or you can contact the <a target="_blank" href="https://www.landmarks-stl.org/contact/">Landmakrs Assocation </a> 
         </p>
       </div>
     );

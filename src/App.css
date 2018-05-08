@@ -219,9 +219,7 @@ li.sdk-layer {
   list-style: none; }
 
 .sdk-map {
-  position: relative; 
-  padding: 25px;
-  background-color: #E5E4E2;}
+  position: relative; }
 
 .sdk-map .controls {
   position: absolute;
@@ -231,61 +229,73 @@ li.sdk-layer {
   height: 100%; }
 
 .App {
-  text-align: center; 
-  background-color: #E5E4E2}
+  text-align: center;
+  background-color: #E5E4E2; }
 
 .App-logo {
   height: 50px;
-  padding: 7px; }
+  padding: 10px; }
 
 .App-header {
   background-color: #000000;
   height: 130px;
-  padding: 10px;
+  padding: 7px;
   color: white; }
 
 .App-title {
-  font-size: 1.5em; 
+  font-size: 1.5em;
   margin-top: 0px;
   margin-bottom: 0px; }
-
 
 .App-intro {
   background-color: #E5E4E2;
   font-size: medium;
+  padding: 20px;
   margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 20px; }
+  margin-bottom: 0px; }
+
+.sdk-map {
+  position: relative;
+  padding: 25px; }
 
 .App-outro {
   background-color: #E5E4E2;
   font-size: medium;
   margin-top: 200px;
   margin-bottom: 0px;
-  padding: 20px; 
-  width:700px;
-  margin:0 auto;
-  text-align:left;}
+  padding: 20px;
+  width: 700px;
+  margin: 0 auto;
+  text-align: left; }
 
 .App-legend {
   background-color: #D1D0CE;
+  border: 5px solid gray;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 550px;
-  border: 5px solid gray;
   font-size: large;
   margin-top: 0px;
   margin-bottom: 0px; }
 
-.App-spreadsheet{
-   width: 100%;
-  height: 150px;
-  margin-bottom:200px}
+.App-spreadsheet {
+  width: 1000%;
+  height: 150px; }
 
-.App-footer{
+.App-footer {
   background-color: #E5E4E2;
-  font-size: medium;}
+  font-size: medium; }
+
+.App-spreadsheet {
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 150px; }
+
+.App-slides {
+  padding: 20px;
+  margin-bottom: 150px; }
 
 @keyframes App-logo-spin {}.sdk-popup-content {
   min-width: 15rem; }
