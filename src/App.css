@@ -281,7 +281,7 @@ li.sdk-layer {
   margin-bottom: 0px; }
 
 .App-spreadsheet {
-  width: 1000%;
+  width: 99%;
   height: 150px; }
 
 .App-footer {
@@ -295,7 +295,7 @@ li.sdk-layer {
   margin-bottom: 150px; }
 
 .App-slides {
-  padding: 30px; }
+  padding: 15px; }
 
 @keyframes App-logo-spin {}.sdk-popup-content {
   min-width: 15rem; }
