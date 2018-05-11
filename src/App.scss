@@ -1,7 +1,7 @@
 @import "@boundlessgeo/sdk/stylesheet/sdk.scss";
 .App {
   text-align: center;
-  background-color: #E5E4E2;
+  background-color: #F0F8FF;
 }
 
 .App-logo {
@@ -23,7 +23,7 @@ padding: 10px;
 }
 
 .App-intro {
-  background-color: #E5E4E2;
+  background-color: #F0F8FF;
   font-size: medium;
   padding: 20px;
   margin-top: 0px;
@@ -35,7 +35,7 @@ padding: 10px;
   padding: 40px }
 
 .App-outro {
-  background-color: #E5E4E2;
+  background-color: #F0F8FF;
   font-size: medium;
   margin-top: 200px;
   margin-bottom: 20px;
@@ -46,12 +46,13 @@ padding: 10px;
 }
 
 .App-legend {
-  background-color: #D1D0CE;
+  background-color: #F0F8FF;
   border: 5px solid gray;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 550px;
+  background-color: #D1D0CE;
   font-size: large;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -62,7 +63,7 @@ padding: 10px;
 }
 
 .App-footer{
-  background-color: #E5E4E2;
+  background-color: #F0F8FF;
   font-size: medium;
 }
 
@@ -75,7 +76,7 @@ padding: 10px;
 }
 
 .App-slides {
-  padding: 15px;
+  padding: 30px;
 
 }
 

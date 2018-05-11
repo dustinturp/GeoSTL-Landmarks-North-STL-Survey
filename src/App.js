@@ -216,8 +216,9 @@ class App extends Component {
         </li>
         <li> The File contains addresses, coordinates, parcel handles, parcel ID, and Wards to link to other GIS datasets.
           </li>
-        <li>Visit the <a target="_blank" target="_blank" href="https://photos.app.goo.gl/RZpAIOlnIHodQ7Gv2">Google Photo Album</a> to view all of the pictures from the survey.</li>
+        <li>Visit the <a target="_blank" href="https://photos.app.goo.gl/RZpAIOlnIHodQ7Gv2">Google Photo Album</a> to view all of the pictures from the survey.</li>
         <li> You can download the entire photo album from the album page. </li>
+        <li> The Project is available on <a target="_blank" href="https://github.com/dustinturp/GeoSTL-Landmarks-North-STL-Survey">GitHub</a>.</li> 
         </p>
         <p className="App-footer">
         Thank you to our volunteers for this crowdsourced effort. Special thanks to <a target="_blank" href="https://github.com/CarlyLanglois">Carly</a>  and <a target="_blank" href="https://github.com/wnordmann">Willie</a>  at <a target="_blank" href="http://boundlessgeo.com/">Boundless</a> for helping with constructing this web map.<br>

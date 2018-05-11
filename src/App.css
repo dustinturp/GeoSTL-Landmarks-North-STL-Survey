@@ -230,7 +230,7 @@ li.sdk-layer {
 
 .App {
   text-align: center;
-  background-color: #E5E4E2; }
+  background-color: #F0F8FF; }
 
 .App-logo {
   height: 50px;
@@ -248,7 +248,7 @@ li.sdk-layer {
   margin-bottom: 0px; }
 
 .App-intro {
-  background-color: #E5E4E2;
+  background-color: #F0F8FF;
   font-size: medium;
   padding: 20px;
   margin-top: 0px;
@@ -259,7 +259,7 @@ li.sdk-layer {
   padding: 40px; }
 
 .App-outro {
-  background-color: #E5E4E2;
+  background-color: #F0F8FF;
   font-size: medium;
   margin-top: 200px;
   margin-bottom: 20px;
@@ -269,12 +269,13 @@ li.sdk-layer {
   text-align: left; }
 
 .App-legend {
-  background-color: #D1D0CE;
+  background-color: #F0F8FF;
   border: 5px solid gray;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 550px;
+  background-color: #D1D0CE;
   font-size: large;
   margin-top: 0px;
   margin-bottom: 0px; }
@@ -284,7 +285,7 @@ li.sdk-layer {
   height: 150px; }
 
 .App-footer {
-  background-color: #E5E4E2;
+  background-color: #F0F8FF;
   font-size: medium; }
 
 .App-spreadsheet {
@@ -294,7 +295,7 @@ li.sdk-layer {
   margin-bottom: 150px; }
 
 .App-slides {
-  padding: 15px; }
+  padding: 30px; }
 
 @keyframes App-logo-spin {}.sdk-popup-content {
   min-width: 15rem; }
