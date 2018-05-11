@@ -262,7 +262,7 @@ li.sdk-layer {
   background-color: #E5E4E2;
   font-size: medium;
   margin-top: 200px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   padding: 20px;
   width: 700px;
   margin: 0 auto;
@@ -294,7 +294,7 @@ li.sdk-layer {
   margin-bottom: 150px; }
 
 .App-slides {
-  padding: 30px; }
+  padding: 15px; }
 
 @keyframes App-logo-spin {}.sdk-popup-content {
   min-width: 15rem; }

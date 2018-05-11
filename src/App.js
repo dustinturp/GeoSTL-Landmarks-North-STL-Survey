@@ -159,8 +159,7 @@ class App extends Component {
           <h1 className="App-title"> <a target="_blank" href="https://www.meetup.com/GeoSTL/"> <font color="white">GeoSTL</font></a> and the <a target="_blank" href="https://www.landmarks-stl.org/"> <font color="white">Landmarks Association</font></a> Survey Results</h1>
         </header>
         <p className="App-intro">
-        The Survey was done on Saturday, February 3rd in North St Louis. The properties are owned by North Side Regenreation that were orrigaionally marked for rehanb. A total of 154 properties were inventoried.
-        Majority of the properties were found to be uninhabitable, unmaintained, and unsecure.
+        The purpose of the survey was to check in on the status of properties that are owned by Northside Regeneration. The properties were initially slated to be rehabilitated. The Survey happened on Saturday, February 3rd in North St Louis and a total of 154 properties were inventoried. Majority of the parcels were found to be uninhabitable, unmaintained, and un-secure from the elements.
         </p>
         <p className="App-legend">
         Click on the parcels to view information. <br>
@@ -215,17 +214,17 @@ class App extends Component {
         <p className="App-outro">
         <li> Click  <a target="_blank" href="https://docs.google.com/spreadsheets/d/14WnxYCA1MKz50Yy4zqYJSojGhghQHuGHghVZqY6-tdY/edit?usp=sharing">here</a> to view the spreadsheet in a new tab and download the file.
         </li>
-        <li> The File contains addresses, coordinates, parcel handles, parcle ID, and Wards to link to other GIS datasets.
+        <li> The File contains addresses, coordinates, parcel handles, parcel ID, and Wards to link to other GIS datasets.
           </li>
-        <li>Visit the <a target="_blank" target="_blank" href="https://photos.app.goo.gl/RZpAIOlnIHodQ7Gv2">Google Photo Album</a> to view all of the pictures from the suvey.</li>
-        <li> You are able to download the entire photo album from the album page. </li>
+        <li>Visit the <a target="_blank" target="_blank" href="https://photos.app.goo.gl/RZpAIOlnIHodQ7Gv2">Google Photo Album</a> to view all of the pictures from the survey.</li>
+        <li> You can download the entire photo album from the album page. </li>
         </p>
         <p className="App-footer">
         Thank you to our volunteers for this crowdsourced effort. Special thanks to <a target="_blank" href="https://github.com/CarlyLanglois">Carly</a>  and <a target="_blank" href="https://github.com/wnordmann">Willie</a>  at <a target="_blank" href="http://boundlessgeo.com/">Boundless</a> for helping with constructing this web map.<br>
         </br>
         This application was made using <a target="_blank" href="http://sdk.boundlessgeo.com/">Boundless SDK</a> <br>
         </br>
-        Questions or comments can be emailed to me@dustin-turpin.me or you can contact the <a target="_blank" href="https://www.landmarks-stl.org/contact/">Landmakrs Assocation </a> 
+        Questions or comments can be emailed to me@dustin-turpin.me, or you can contact the <a target="_blank" href="https://www.landmarks-stl.org/contact/">Landmarks Association </a> 
         </p>
       </div>
     );
