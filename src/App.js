@@ -159,7 +159,7 @@ class App extends Component {
           <h1 className="App-title"> <a target="_blank" href="https://www.meetup.com/GeoSTL/"> <font color="white">GeoSTL</font></a> and the <a target="_blank" href="https://www.landmarks-stl.org/"> <font color="white">Landmarks Association</font></a> Survey Results</h1>
         </header>
         <p className="App-intro">
-        The purpose of the survey was to check in on the status of properties that are owned by Northside Regeneration. The properties were initially slated to be rehabilitated. The Survey happened on Saturday, February 3rd in North St Louis and a total of 154 properties were inventoried. Majority of the parcels were found to be uninhabitable, unmaintained, and un-secure from the elements.
+        The purpose of the survey was to check in on the status of properties that are owned by Northside Regeneration. The properties were initially slated to be rehabilitation. The Survey happened on Saturday, February 3rd in North St Louis and a total of 154 properties were inventoried. Majority of the parcels were found to be uninhabitable, unmaintained, and un-secure from the elements.
         </p>
         <p className="App-legend">
         Click on the parcels to view information. <br>
