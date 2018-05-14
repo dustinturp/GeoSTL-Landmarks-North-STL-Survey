@@ -194,7 +194,7 @@ class App extends Component {
                 }
               }
 
-              if (features.length  > 0) {
+              if (features.length  > 1) {
                 console.log(features);
                 // no features, :( Let the user know nothing was there.
                 map.addPopup(<MarkFeatures features={features} coordinate={xy} closeable/>, true, true);
