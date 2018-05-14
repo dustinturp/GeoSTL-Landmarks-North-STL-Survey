@@ -261,12 +261,13 @@ li.sdk-layer {
 .App-outro {
   background-color: #F0F8FF;
   font-size: medium;
-  margin-top: 200px;
+  margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
   width: 700px;
-  margin: 0 auto;
-  text-align: left; }
+  margin-left: 30px;
+  text-align: left;
+  padding-left: 600px; }
 
 .App-legend {
   background-color: #F0F8FF;
@@ -280,13 +281,10 @@ li.sdk-layer {
   margin-top: 0px;
   margin-bottom: 0px; }
 
-.App-spreadsheet {
-  width: 99%;
-  height: 150px; }
-
 .App-footer {
   background-color: #F0F8FF;
-  font-size: medium; }
+  font-size: medium;
+  margin-top: 160px; }
 
 .App-spreadsheet {
   margin: 0 auto;
@@ -295,7 +293,8 @@ li.sdk-layer {
   margin-bottom: 150px; }
 
 .App-slides {
-  padding: 15px; }
+  padding: 15px;
+  align: right; }
 
 @keyframes App-logo-spin {}.sdk-popup-content {
   min-width: 15rem; }
