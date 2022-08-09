@@ -1,8 +1,11 @@
-The Laandmarks survey was a joint opperation with around 30 volunteers. An open Data Kit instance was created and used for field collection. We surveyed around 150 homes. 
-The map was created with OpenLayers.
+# Overview
+The Laandmarks survey was a joint opperation with ~ 30 volunteers to survey around 150 homes around St Louis. We collected infomration on the condition of each property. Results were presented to the general public. With a mobile collection app the survey took about 2 hours. 
 
+## Tech Used
+* ODK (Open Data Kit)
+* Google cloud
+* OpenLayers
+* AWS
 
-
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
-
+## Deployed Link
+[Hosted on AWS](http://landmarks.geostl.org/)
